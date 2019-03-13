@@ -1,0 +1,9 @@
+prototype(VIVOMEDIA.FontAwesome.Icon:Icon) < prototype(Neos.Neos:ContentComponent) {
+
+	size = ${q(node).property('size')}
+	icon = ${q(node).property('icon')}
+
+	renderer = afx`
+		<div class="vivomedia-fontawesome-icon"><VIVOMEDIA.FontAwesome.Icon:IconComponent icon={props.icon} size={props.size} /></div>
+	`
+}

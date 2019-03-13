@@ -1,0 +1,46 @@
+prototype(VIVOMEDIA.FontAwesome.Icon:IconComponent) < prototype(Neos.Fusion:Component) {
+
+	renderer = afx`
+		<VIVOMEDIA.FontAwesome.Icon:IconWrapper size={props.size}>
+			<VIVOMEDIA.FontAwesome.Icon:IconLayer icon={props.icon} />
+		</VIVOMEDIA.FontAwesome.Icon:IconWrapper>
+	`
+}
+
+prototype(VIVOMEDIA.FontAwesome.Icon:IconWrapper) < prototype(Neos.Fusion:Component) {
+
+	@context {
+		size = ${this.size}
+	}
+
+	class = Neos.Fusion:RawArray {
+		size = ${'fa-' + size}
+	}
+
+	renderer = afx`
+		<span class={props.class}>{props.content}</span>
+	`
+}
+
+prototype(VIVOMEDIA.FontAwesome.Icon:IconLayer) < prototype(Neos.Fusion:Component) {
+
+	icon = ${''}
+	size = ${''}
+	isInversed = ${false}
+
+	@context {
+		icon = ${this.icon}
+		size = ${this.size}
+		isInversed = ${this.isInversed}
+	}
+
+	class = Neos.Fusion:RawArray {
+		icon = ${icon}
+		size = ${'fa-' + size}
+		inverse = ${isInversed ? 'fa-inverse' : ''}
+	}
+
+	renderer = afx`
+		<i class={props.class}>{props.content}</i>
+	`
+}

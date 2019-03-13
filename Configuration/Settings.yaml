@@ -1,0 +1,11 @@
+VIVOMEDIA:
+  FontAwesome:
+    Icon:
+      licence: free #pro
+      version: 5.5.0
+
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        VIVOMEDIA.FontAwesome.Icon: true
