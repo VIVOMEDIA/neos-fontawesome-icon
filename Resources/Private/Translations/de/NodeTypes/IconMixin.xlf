@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="" product-name="VIVOMEDIA.FontAwesome.Icon" source-language="en" datatype="plaintext">
+		<body>
+			<trans-unit id="groups.style" xml:space="preserve">
+				<source>Styles</source>
+				<target xml:lang="de" state="translated">Stil</target>
+			</trans-unit>
+			<trans-unit id="properties.icon" xml:space="preserve">
+				<source>Icon</source>
+				<target xml:lang="de" state="translated">Icon</target>
+			</trans-unit>
+			<trans-unit id="properties.iconSize" xml:space="preserve">
+				<source>Icon Size</source>
+				<target xml:lang="de" state="translated">Icon Größe</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
