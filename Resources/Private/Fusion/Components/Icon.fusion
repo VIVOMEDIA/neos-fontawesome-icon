@@ -1,24 +1,46 @@
 prototype(VIVOMEDIA.FontAwesome.Icon:IconComponent) < prototype(Neos.Fusion:Component) {
 
 	renderer = afx`
-		<VIVOMEDIA.FontAwesome.Icon:IconWrapper size={props.size}>
-			<VIVOMEDIA.FontAwesome.Icon:IconLayer icon={props.icon} />
+		<VIVOMEDIA.FontAwesome.Icon:IconWrapper size={props.size} class={props.class}>
+			<VIVOMEDIA.FontAwesome.Icon:IconLayer icon={props.icon} isInversed={false} />
 		</VIVOMEDIA.FontAwesome.Icon:IconWrapper>
 	`
 }
+
+prototype(VIVOMEDIA.FontAwesome.Icon:StackedIconComponent) < prototype(Neos.Fusion:Component) {
+
+	renderer = afx`
+		<VIVOMEDIA.FontAwesome.Icon:IconWrapper size={props.size} class={props.class} isStack="true">
+			<VIVOMEDIA.FontAwesome.Icon:IconLayer icon={props.backgroundIcon} size="stack-2x" />
+			<VIVOMEDIA.FontAwesome.Icon:IconLayer icon={props.icon} size="stack-1x" isInversed={props.iconInversed} />
+		</VIVOMEDIA.FontAwesome.Icon:IconWrapper>
+	`
+}
+
 
 prototype(VIVOMEDIA.FontAwesome.Icon:IconWrapper) < prototype(Neos.Fusion:Component) {
 
 	@context {
 		size = ${this.size}
+		isStack = ${this.isStack}
 	}
 
-	class = Neos.Fusion:RawArray {
-		size = ${'fa-' + size}
+	class = Neos.Fusion:RawArray
+
+	class.@process.addStack = ${Array.push(value, isStack ? 'fa-stack' : '')}
+	class.@process.addSize = ${Array.push(value, size ? 'fa-' + size : '')}
+
+	style = Neos.Fusion:RawArray {
+		fixLineHight = Neos.Fusion:Value {
+			value = 'line-height: 2em'
+			@if.isStack = ${isStack}
+			@if.isInBackend = ${documentNode.context.inBackend}
+		}
 	}
+
 
 	renderer = afx`
-		<span class={props.class}>{props.content}</span>
+		<span class={props.class} style={props.style}>{props.content}</span>
 	`
 }
 
@@ -36,7 +58,7 @@ prototype(VIVOMEDIA.FontAwesome.Icon:IconLayer) < prototype(Neos.Fusion:Componen
 
 	class = Neos.Fusion:RawArray {
 		icon = ${icon}
-		size = ${'fa-' + size}
+		size = ${size ? 'fa-' + size : ''}
 		inverse = ${isInversed ? 'fa-inverse' : ''}
 	}
 

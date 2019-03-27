@@ -1,9 +1,43 @@
 prototype(VIVOMEDIA.FontAwesome.Icon:Icon) < prototype(Neos.Neos:ContentComponent) {
 
-	size = ${q(node).property('size')}
 	icon = ${q(node).property('icon')}
+	size = ${q(node).property('iconSize')}
 
-	renderer = afx`
-		<div class="vivomedia-fontawesome-icon"><VIVOMEDIA.FontAwesome.Icon:IconComponent icon={props.icon} size={props.size} /></div>
-	`
+	iconInversed = ${q(node).property('iconInversed')}
+	backgroundIcon = ${q(node).property('backgroundIcon')}
+
+	class = Neos.Fusion:RawArray
+
+	renderer = Neos.Fusion:Case {
+		stacked {
+			condition = ${q(node).property('backgroundIcon')}
+			renderer = afx`
+				<div class="vivomedia-fontawesome-icon">
+					<VIVOMEDIA.FontAwesome.Icon:StackedIconComponent
+						class={props.class}
+						icon={props.icon}
+						size={props.size}
+						iconInversed={props.iconInversed}
+						backgroundIcon={props.backgroundIcon}
+					/>
+				</div>
+			`
+		}
+
+		default {
+			condition = ${true}
+			renderer = afx`
+				<div class="vivomedia-fontawesome-icon">
+					<VIVOMEDIA.FontAwesome.Icon:IconComponent
+						class={props.class}
+						icon={props.icon}
+						size={props.size}
+					/>
+				</div>
+			`
+		}
+
+	}
+
+
 }

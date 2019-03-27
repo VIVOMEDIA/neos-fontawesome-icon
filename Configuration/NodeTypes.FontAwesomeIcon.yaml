@@ -1,43 +1,10 @@
-'VIVOMEDIA.FontAwesome.Icon:IconMixin':
-  abstract: true
-  properties:
-    icon:
-      type: string
-      defaultValue: ~
-      ui:
-        label: Icon
-        reloadIfChanged: true
-        inspector:
-          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
-        placeholder: Icon
-        values: []
-    size:
-      type: string
-      defaultValue: lg
-      ui:
-        label: Size
-        reloadIfChanged: true
-        inspector:
-          editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
-          editorOptions:
-            placeholder: 'Choose your Size'
-            values:
-              xs:
-                label: xs
-              sm:
-                label: sm
-              lg:
-                label: lg
-              2x:
-                label: 2x
-              3x:
-                label: 3x
-              5x:
-                label: 5x
-              7x:
-                label: 7x
-              10x:
-                label: 10x
-  postprocessors:
-    FontAwesomeIconsNodeTypePostprocessor:
-      postprocessor: VIVOMEDIA\FontAwesome\Icon\NodeTypePostprocessor\FontAwesomeIconsNodeTypePostprocessor
+'VIVOMEDIA.FontAwesome.Icon:Icon':
+  superTypes:
+    'Neos.Neos:Content': true
+    'VIVOMEDIA.FontAwesome.Icon:IconMixin': true
+    'VIVOMEDIA.FontAwesome.Icon:IconBackgroundMixin': true
+  ui:
+    label: i18n
+    icon: fas fa-flag
+    group: general
+    inlineEditable: false

@@ -53,7 +53,10 @@ class FontAwesomeIconsNodeTypePostprocessor implements NodeTypePostprocessorInte
                 ];
             }
 
-            $configuration['properties']['icon']['ui']['inspector']['editorOptions']['values'] = $editorOptionValues;
+        }
+
+        foreach ($options['properties'] as $property) {
+            $configuration['properties'][$property]['ui']['inspector']['editorOptions']['values'] = $editorOptionValues;
         }
     }
 
