@@ -14,6 +14,8 @@
         reloadIfChanged: true
         inspector:
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            allowEmpty: true
           group: stacked
         values: []
     iconInversed:
