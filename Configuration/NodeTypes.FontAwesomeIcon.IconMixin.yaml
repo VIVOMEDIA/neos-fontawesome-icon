@@ -37,12 +37,28 @@
                 label: 2x
               3x:
                 label: 3x
+              4x:
+                label: 4x
               5x:
                 label: 5x
+              6x:
+                label: 6x
               7x:
                 label: 7x
+              8x:
+                label: 8x
+              9x:
+                label: 9x
               10x:
                 label: 10x
+    hasBorder:
+      type: boolean
+      defaultValue: false
+      ui:
+        label: i18n
+        reloadIfChanged: true
+        inspector:
+          group: style
   postprocessors:
     FontAwesomeIconsNodeTypePostprocessor:
       postprocessor: VIVOMEDIA\FontAwesome\Icon\NodeTypePostprocessor\FontAwesomeIconsNodeTypePostprocessor

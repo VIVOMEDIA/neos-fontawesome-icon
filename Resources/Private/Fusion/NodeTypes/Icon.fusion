@@ -4,6 +4,7 @@ prototype(VIVOMEDIA.FontAwesome.Icon:Icon) < prototype(Neos.Neos:ContentComponen
 	size = ${q(node).property('iconSize')}
 
 	iconInversed = ${q(node).property('iconInversed')}
+	hasBorder = ${q(node).property('hasBorder')}
 	backgroundIcon = ${q(node).property('backgroundIcon')}
 
 	class = Neos.Fusion:RawArray
@@ -17,6 +18,7 @@ prototype(VIVOMEDIA.FontAwesome.Icon:Icon) < prototype(Neos.Neos:ContentComponen
 						class={props.class}
 						icon={props.icon}
 						size={props.size}
+						hasBorder={props.hasBorder}
 						iconInversed={props.iconInversed}
 						backgroundIcon={props.backgroundIcon}
 					/>
@@ -32,6 +34,7 @@ prototype(VIVOMEDIA.FontAwesome.Icon:Icon) < prototype(Neos.Neos:ContentComponen
 						class={props.class}
 						icon={props.icon}
 						size={props.size}
+						hasBorder={props.hasBorder}
 					/>
 				</div>
 			`
