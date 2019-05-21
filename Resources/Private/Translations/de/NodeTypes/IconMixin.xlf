@@ -10,6 +10,10 @@
 				<source>Icon</source>
 				<target xml:lang="de" state="translated">Icon</target>
 			</trans-unit>
+			<trans-unit id="properties.hasBorder" xml:space="preserve">
+				<source>Add border</source>
+				<target xml:lang="de" state="translated">Rahmen hinzufügen</target>
+			</trans-unit>
 			<trans-unit id="properties.iconSize" xml:space="preserve">
 				<source>Icon Size</source>
 				<target xml:lang="de" state="translated">Icon Größe</target>
