@@ -5,6 +5,6 @@
     'VIVOMEDIA.FontAwesome.Icon:IconBackgroundMixin': true
   ui:
     label: i18n
-    icon: fas fa-flag
+    icon: 'fas fa-flag'
     group: general
     inlineEditable: false

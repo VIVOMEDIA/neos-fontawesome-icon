@@ -85,7 +85,13 @@
             "Neos.Fusion-20180211175500",
             "Neos.Fusion-20180211184832",
             "Neos.Flow-20180415105700",
-            "Neos.Neos-20180907103800"
+            "Neos.Neos-20180907103800",
+            "VIVOMEDIA.KfzInnungBerlinDe-20150616102500",
+            "Neos.ContentRepository.Search-20161210231100",
+            "Neos.Neos.Ui-20190319094900",
+            "Neos.Flow-20190425144900",
+            "Neos.Flow-20190515215000",
+            "Neos.NodeTypes-20190917101945"
         ]
     }
 }
