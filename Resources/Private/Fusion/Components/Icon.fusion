@@ -33,7 +33,7 @@ prototype(VIVOMEDIA.FontAwesome.Icon:IconWrapper) < prototype(Neos.Fusion:Compon
 	class.@process.addSize = ${Array.push(value, size ? 'fa-' + size : '')}
 
 	style = Neos.Fusion:RawArray {
-		fixLineHight = Neos.Fusion:Value {
+		fixLineHeight = Neos.Fusion:Value {
 			value = 'line-height: 2em'
 			@if.isStack = ${isStack}
 			@if.isInBackend = ${documentNode.context.inBackend}
