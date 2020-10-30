@@ -65,6 +65,6 @@ prototype(VIVOMEDIA.FontAwesome.Icon:IconLayer) < prototype(Neos.Fusion:Componen
 	}
 
 	renderer = afx`
-		<i class={props.class}>{props.content}</i>
+		<i class={props.class} aria-hidden="true">{props.content}</i>
 	`
 }
