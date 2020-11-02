@@ -2,7 +2,7 @@ VIVOMEDIA:
   FontAwesome:
     Icon:
       licence: free #pro
-      version: 5.5.0
+      version: 5.12.1
 
 Neos:
   Neos:
