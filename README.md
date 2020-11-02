@@ -23,7 +23,7 @@ composer require vivomedia/neos-fontawesome-icon
 
 ## Configuration
 
-You can set up your desired FontAwesome Version in `/Configuration/Development/Settings.yaml`
+You can set up your desired FontAwesome Version in `/Configuration/Settings.yaml`
 
 ```
 VIVOMEDIA:
