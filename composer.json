@@ -4,7 +4,7 @@
     "description": "Neos CMS Components and NodeType for FontAwesome-Icons",
     "license": "MIT",
     "require": {
-        "neos/neos": ">=4.0",
+        "neos/neos": ">=5.2",
         "composer/semver": "^1.4.0"
     },
     "autoload": {
