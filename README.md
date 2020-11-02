@@ -1,8 +1,8 @@
 # Neos CMS FontAwesome Pugin
 
-[![Latest Stable Version](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/v/stable)](https://packagist.org/packages/vivomedia/neos-jpeg-pagespeed-optimization)
-[![Total Downloads](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/downloads)](https://packagist.org/packages/vivomedia/neos-jpeg-pagespeed-optimization)
-[![License](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/license)](https://packagist.org/packages/vivomedia/neos-jpeg-pagespeed-optimization)
+[![Latest Stable Version](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/v/stable)](https://packagist.org/packages/vivomedia/neos-fontawesome-icon)
+[![Total Downloads](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/downloads)](https://packagist.org/packages/vivomedia/neos-fontawesome-icon)
+[![License](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/license)](https://packagist.org/packages/vivomedia/neos-fontawesome-icon)
 [![Maintainability](https://api.codeclimate.com/v1/badges/86bbd4bb9f4ebfe34241/maintainability)](https://codeclimate.com/github/VIVOMEDIA/neos-fontawesome-icon/maintainability)
 
 FontAwesome Metadata Version: **5.15.1**
