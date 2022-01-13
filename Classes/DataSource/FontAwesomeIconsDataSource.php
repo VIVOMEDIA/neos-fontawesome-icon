@@ -1,18 +1,19 @@
 <?php
-namespace VIVOMEDIA\FontAwesome\Icon\NodeTypePostprocessor;
+namespace VIVOMEDIA\FontAwesome\Icon\DataSource;
 
-use Neos\Flow\Annotations as Flow;
 use Composer\Semver\Comparator;
-use Neos\ContentRepository\Domain\Model\NodeType;
-use Neos\ContentRepository\NodeTypePostprocessor\NodeTypePostprocessorInterface;
+use Neos\ContentRepository\Domain\Model\NodeInterface;
+use Neos\Flow\Annotations as Flow;
+use Neos\Neos\Service\DataSource\AbstractDataSource;
 use Symfony\Component\Yaml\Yaml;
 
-/**
- * Class FontAwesomeIconsNodeTypePostprocessor
- * @package VIVOMEDIA\FontAwesome\Icon\NodeTypePostprocessor
- */
-class FontAwesomeIconsNodeTypePostprocessor implements NodeTypePostprocessorInterface
+class FontAwesomeIconsDataSource extends AbstractDataSource
 {
+    /**
+     * @var string
+     */
+    static protected $identifier = 'vivomedia-font-awesome-icons';
+
     const STYLE_SOLID = 'solid';
     const STYLE_LIGHT = 'light';
     const STYLE_REGULAR = 'regular';
@@ -30,7 +31,7 @@ class FontAwesomeIconsNodeTypePostprocessor implements NodeTypePostprocessorInte
      */
     protected $configuration;
 
-    public function process(NodeType $nodeType, array &$configuration, array $options)
+    public function getData(NodeInterface $node = null, array $arguments = [])
     {
         $installedVersion = $this->configuration['version'] ?? '5.0.0';
         $licence = in_array($this->configuration['licence'], ['free','pro'], true) ? $this->configuration['licence'] : 'free';
@@ -54,10 +55,7 @@ class FontAwesomeIconsNodeTypePostprocessor implements NodeTypePostprocessorInte
             }
 
         }
-
-        foreach ($options['properties'] as $property) {
-            $configuration['properties'][$property]['ui']['inspector']['editorOptions']['values'] = $editorOptionValues;
-        }
+        return $editorOptionValues;
     }
 
     protected function loadIconMetaData(string $currentLicence) : array

@@ -16,8 +16,8 @@
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
           editorOptions:
             allowEmpty: true
+            dataSourceIdentifier: vivomedia-font-awesome-icons
           group: stacked
-        values: []
     iconInversed:
       type: boolean
       defaultValue: false
@@ -26,9 +26,3 @@
         reloadIfChanged: true
         inspector:
           group: stacked
-  postprocessors:
-    FontAwesomeIconsNodeTypePostprocessor:
-      postprocessor: VIVOMEDIA\FontAwesome\Icon\NodeTypePostprocessor\FontAwesomeIconsNodeTypePostprocessor
-      postprocessorOptions:
-        properties:
-          backgroundIcon: 'backgroundIcon'

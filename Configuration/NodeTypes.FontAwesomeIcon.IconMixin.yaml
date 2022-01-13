@@ -15,7 +15,8 @@
         inspector:
           group: style
           editor: Neos.Neos/Inspector/Editors/SelectBoxEditor
-        values: []
+          editorOptions:
+            dataSourceIdentifier: vivomedia-font-awesome-icons
     iconSize:
       type: string
       defaultValue: lg
@@ -59,10 +60,4 @@
         reloadIfChanged: true
         inspector:
           group: style
-  postprocessors:
-    FontAwesomeIconsNodeTypePostprocessor:
-      postprocessor: VIVOMEDIA\FontAwesome\Icon\NodeTypePostprocessor\FontAwesomeIconsNodeTypePostprocessor
-      postprocessorOptions:
-        properties:
-          icon: 'icon'
 
