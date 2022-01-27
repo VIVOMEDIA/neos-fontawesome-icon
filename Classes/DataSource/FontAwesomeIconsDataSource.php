@@ -46,6 +46,11 @@ class FontAwesomeIconsDataSource extends AbstractDataSource
             }
 
             foreach ($data['styles'] as $style) {
+                // Skip disabled Styles
+                if(isset($this->configuration['disabled'][$style]) && $this->configuration['disabled'][$style]){
+                    continue;
+                }
+                
                 $optionKey = $this->getIconCode($style, $name);
                 $editorOptionValues[$optionKey] = [
                     'label' => $data['label'],
