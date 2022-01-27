@@ -18,12 +18,14 @@ class FontAwesomeIconsDataSource extends AbstractDataSource
     const STYLE_LIGHT = 'light';
     const STYLE_REGULAR = 'regular';
     const STYLE_BRAND = 'brands';
+    const STYLE_DUOTONE = 'duotone';
 
     protected $styleCode = [
         self::STYLE_SOLID => 'fas',
         self::STYLE_LIGHT => 'fal',
         self::STYLE_REGULAR => 'far',
         self::STYLE_BRAND => 'fab'
+        self::STYLE_DUOTONE => 'dab'
     ];
 
     /**
