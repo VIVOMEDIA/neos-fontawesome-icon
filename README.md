@@ -1,4 +1,4 @@
-# Neos CMS FontAwesome Pugin
+# Neos CMS FontAwesome Plugin
 
 [![Latest Stable Version](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/v/stable)](https://packagist.org/packages/vivomedia/neos-fontawesome-icon)
 [![Total Downloads](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/downloads)](https://packagist.org/packages/vivomedia/neos-fontawesome-icon)
