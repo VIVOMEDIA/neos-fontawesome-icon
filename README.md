@@ -33,6 +33,20 @@ VIVOMEDIA:
       version: 5.12.1
 ``` 
 
+### Disable Icon Groups
+You can disable Icon groups (like brands) with the `disabled` setting. 
+```
+VIVOMEDIA:
+  FontAwesome:
+    Icon:
+      disabled:
+        solid: false
+        light: false
+        regular: false
+        brands: true # Disable Brand Icons
+        duotone: false
+```
+
 ## Screenshots
 ![Screenshot](Documentation/Screenshot.png)
 
