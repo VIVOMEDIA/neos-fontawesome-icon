@@ -4122,6 +4122,7 @@ booth-curtain:
 bootstrap:
   changes:
     - 5.8.0
+    - 5.15.4
   label: Bootstrap
   search:
     terms: []
@@ -4959,6 +4960,7 @@ bug:
   changes:
     - '3.2'
     - 5.0.0
+    - 5.15.4
   label: Bug
   search:
     terms:
@@ -5019,6 +5021,7 @@ bullseye:
     - 5.0.0
     - 5.3.0
     - 5.10.1
+    - 5.15.4
   label: Bullseye
   search:
     terms:
@@ -11641,6 +11644,7 @@ disc-drive:
 discord:
   changes:
     - 5.0.0
+    - 5.15.4
   label: Discord
   search:
     terms: []
@@ -12174,6 +12178,7 @@ drone:
   changes:
     - 5.9.0
     - 5.10.1
+    - 5.15.4
   label: Drone
   search:
     terms:
@@ -13832,6 +13837,7 @@ figma:
     - 5.6.0
     - 5.7.0
     - 5.8.0
+    - 5.15.4
   label: Figma
   search:
     terms:
@@ -15504,6 +15510,7 @@ font-awesome:
   changes:
     - '4.6'
     - 5.0.0
+    - 5.15.4
   label: Font Awesome
   search:
     terms:
@@ -15515,6 +15522,7 @@ font-awesome:
 font-awesome-alt:
   changes:
     - 5.0.0
+    - 5.15.4
   label: Alternate Font Awesome
   search:
     terms: []
@@ -15526,6 +15534,7 @@ font-awesome-flag:
   changes:
     - 5.0.0
     - 5.0.1
+    - 5.15.4
   label: Font Awesome Flag
   search:
     terms: []
@@ -15536,6 +15545,7 @@ font-awesome-flag:
 font-awesome-logo-full:
   changes:
     - 5.0.11
+    - 5.15.4
   label: Font Awesome Full Logo
   ligatures:
     - Font Awesome
@@ -19497,6 +19507,7 @@ hospital-symbol:
 hospital-user:
   changes:
     - 5.7.0
+    - 5.13.0
   label: Hospital with User
   search:
     terms:
@@ -37166,19 +37177,6 @@ triangle-music:
     - light
     - duotone
   unicode: f8e2
-  voted: false
-tripadvisor:
-  changes:
-    - '4.4'
-    - 5.0.0
-    - 5.13.1
-    - 5.14.0
-  label: TripAdvisor
-  search:
-    terms: []
-  styles:
-    - brands
-  unicode: f262
   voted: false
 trophy:
   changes:

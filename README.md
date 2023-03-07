@@ -5,9 +5,9 @@
 [![License](https://poser.pugx.org/vivomedia/neos-fontawesome-icon/license)](https://packagist.org/packages/vivomedia/neos-fontawesome-icon)
 [![Maintainability](https://api.codeclimate.com/v1/badges/86bbd4bb9f4ebfe34241/maintainability)](https://codeclimate.com/github/VIVOMEDIA/neos-fontawesome-icon/maintainability)
 
-FontAwesome Metadata Version: **5.15.1**
+FontAwesome Metadata Version: **5.15.5**
 
-Supported FontAwesome Version by Neos: **5.12.1**
+Supported FontAwesome Version by Neos: **5.15.3**
 
 Plugin to add FontAwesome icon selector to your nodetypes. It also provides a default FontAwesome icon nodetype.
 
