@@ -49,7 +49,7 @@ class FontAwesomeIconsDataSource extends AbstractDataSource
 
             foreach ($data['styles'] as $style) {
                 // Skip disabled Styles
-                if(isset($this->configuration['disabled'][$style]) && $this->configuration['disabled'][$style]){
+                if(!isset($this->configuration['styles'][$style]) || !$this->configuration['styles'][$style]){
                     continue;
                 }
                 

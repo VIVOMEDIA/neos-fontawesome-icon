@@ -3,6 +3,12 @@ VIVOMEDIA:
     Icon:
       licence: free #pro
       version: 5.12.1
+      styles: # enable or disable styles
+        solid: true
+        light: true
+        regular: true
+        brands: true
+        duotone: false
 
 Neos:
   Neos:
