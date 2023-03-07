@@ -24,7 +24,7 @@ class FontAwesomeIconsDataSource extends AbstractDataSource
         self::STYLE_SOLID => 'fas',
         self::STYLE_LIGHT => 'fal',
         self::STYLE_REGULAR => 'far',
-        self::STYLE_BRAND => 'fab'
+        self::STYLE_BRAND => 'fab',
         self::STYLE_DUOTONE => 'dab'
     ];
 
