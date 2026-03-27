@@ -33,7 +33,7 @@ class FontAwesomeIconsDataSource extends AbstractDataSource
      */
     protected $configuration;
 
-    public function getData(NodeInterface $node = null, array $arguments = [])
+    public function getData(?NodeInterface $node = null, array $arguments = [])
     {
         $installedVersion = $this->configuration['version'] ?? '5.0.0';
         $licence = in_array($this->configuration['licence'], ['free','pro'], true) ? $this->configuration['licence'] : 'free';
